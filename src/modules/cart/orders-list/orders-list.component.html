@@ -26,6 +26,7 @@
               <th scope="col">PRICE</th>
               <th scope="col">QUANTITY</th>
               <th scope="col">TOTAL</th>
+              <th scope="col">Delete</th>
             </tr>
           </thead>
           <tbody class="text-center" style="vertical-align: middle">
@@ -61,7 +62,7 @@
                 </button>
               </td>
               <td class="col">
-                $ {{ item["price"] * item["count"] | number: ".2" }}
+                Rs{{ item["price"] * item["count"] | number: ".2" }}
               </td>
             </tr>
           </tbody>
@@ -75,18 +76,18 @@
             <hr />
             <div class="row">
               <h6 class="col-6 fw-bold">Subtotal</h6>
-              <span class="col-6 text-end">${{ total | number: ".2" }} </span>
+              <span class="col-6 text-end">Rs{{ total | number: ".2" }} </span>
             </div>
             <hr />
 
             <div class="row">
               <h6 class="col-6 fw-bold">Shipping</h6>
-              <span class="col-6 text-end">00$</span>
+              <span class="col-6 text-end">00Rs  wasawsaws</span>
             </div>
             <hr />
             <div class="row">
               <h6 class="col-6 fw-bold">Total</h6>
-              <span class="col-6 text-end">{{ total | number: ".2" }}$</span>
+              <span class="col-6 text-end">{{ total | number: ".2" }}Rs</span>
             </div>
             <hr />
             <div class="row justify-content-center">

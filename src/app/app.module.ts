@@ -13,9 +13,14 @@ import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import { RedirectComponent } from 'src/shared_modules/sh_modules/shared-module/redirect/redirect.component';
+import { AdminPComponent } from 'src/modules/Admin/admin-p/admin-p.component';
+import { AdminMModule } from 'src/modules/Admin/admin-m.module';
+
+
+
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, ],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -29,6 +34,7 @@ import { RedirectComponent } from 'src/shared_modules/sh_modules/shared-module/r
     HttpClientModule,
     ReactiveFormsModule,
     FormsModule,
+    AdminMModule
   ],
   providers: [],
   bootstrap: [AppComponent],

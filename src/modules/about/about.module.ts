@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { AboutRoutingModule } from './about-routing.module';
@@ -9,4 +9,5 @@ import { SharedModuleModule } from 'src/shared_modules/sh_modules/shared-module/
   declarations: [AboutUsComponent],
   imports: [CommonModule, AboutRoutingModule, SharedModuleModule],
 })
-export class AboutModule {}
+export class AboutModule {
+}

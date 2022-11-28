@@ -46,6 +46,13 @@ const routes: Routes = [
       ),
   },
   {
+    path: 'Admin',
+    loadChildren: () =>
+    import('../modules/Admin/admin-m.module').then(
+      (m)=> m.AdminMModule
+    ),
+  },
+  {
     path: 'redirect',
     component: RedirectComponent,
   },
